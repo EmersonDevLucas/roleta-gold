@@ -30,18 +30,22 @@
             <h2 class="text-2xl font-bold text-gray-800">Cadastre-se</h2>
             <p class="text-gray-600 mb-4">Preencha o formulário para girar a roleta!</p>
     
-            <form action="POST">
+            <form action=" {{ route('atualizar') }}" method="POST">
+                @csrf
                 <div class="flex gap-2">
-                    <input type="text" placeholder="Nome" class="w-1/2 p-2 border border-gray-300 rounded">
-                    <input type="text" placeholder="Sobrenome" class="w-1/2 p-2 border border-gray-300 rounded">
+                    <input id="nome" name="nome" type="text" placeholder="Nome" class="w-1/2 p-2 border border-gray-300 rounded">
+                    <input id="sobrenome" name="sobrenome" type="text" placeholder="Sobrenome" class="w-1/2 p-2 border border-gray-300 rounded">
                 </div>
-                <input type="text" placeholder="Placa do seu veículo" class="w-full p-2 mt-3 border border-gray-300 rounded">
-                <input type="email" placeholder="Email" class="w-full p-2 mt-3 border border-gray-300 rounded">
-                <input type="number" placeholder="Telefone" class="w-full p-2 mt-3 border border-gray-300 rounded">
-                <input type="text" placeholder="Tem Proteção Veicular?" class="w-full p-2 mt-3 border border-gray-300 rounded">
+                <input id="placa" name="placa" type="text" placeholder="Placa do seu veículo" class="w-full p-2 mt-3 border border-gray-300 rounded">
+                <input id="email" name="email" type="email" placeholder="Email" class="w-full p-2 mt-3 border border-gray-300 rounded">
+                <input id="tel" name="tel" type="number" placeholder="Telefone" class="w-full p-2 mt-3 border border-gray-300 rounded">
+                <input id="ppv" name="ppv" type="text" placeholder="Tem Proteção Veicular?" class="w-full p-2 mt-3 border border-gray-300 rounded">
+                @error('email')
+                <div class="text-red-500 mt-1">{{ $message }}</div>
+                @enderror
         
-                <button class="w-full bg-[#c3992f] text-white p-2 rounded mt-4 hover:bg-[#a8801f]">
-                    <a href="/girar">Tentar a sorte!</a>
+                <button type="submit" class="w-full bg-[#c3992f] text-white p-2 rounded mt-4 hover:bg-[#a8801f]">
+                    Tentar a sorte!
                 </button>
             </form>
         </div>

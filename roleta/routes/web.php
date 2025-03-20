@@ -9,3 +9,5 @@ Route::get('/', function () {
 Route::get('/girar', function () {
     return view('roleta');
 });
+
+Route::post('/', [App\Http\Controllers\FormController::class, 'atualizar'])->name('atualizar');
