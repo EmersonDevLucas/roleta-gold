@@ -35,4 +35,5 @@ class FormController extends Controller
         return view('roleta')->with('mensagem', 'Dados salvos com sucesso!');
 
     }
+
 }
