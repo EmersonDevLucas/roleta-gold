@@ -1,18 +1,18 @@
 var data = [
-    //{ id: '', color: '#3f297e', text: 'ALL IN', ikon: 'invert_colors' },
-    { id: '', type: 'allin', color: '#3f297e', text: '1', ikon: '' },
-    { id: '', type: 'quiz', color: '#1d61ac', text: '2' },
-    { id: '', type: 'quiz', color: '#169ed8', text: '3' },
-    { id: '', type: 'quiz', color: '#209b6c', text: '4' },
-    { id: '', color: '#60b236', text: '5', ikon: '' },
-    { id: '', color: '#efe61f', text: '6' },
-    { id: '', color: '#f7a416', text: '7' },
-    { id: '', type: 'time', color: '#e6471d', text: '8', ikon: '' },
-    { id: '', type: 'question', color: '#dc0936', text: '9' },
-    { id: '', color: '#e5177b', text: '10' },
-    { id: '', color: '#be107f', text: '11' },
-    { id: '', type: 'replay', color: '#881f7e', text: '12', ikon: '' }
-  ];
+  { id: '', type: 'allin', color: '#C8A44B', text: '1', ikon: '' },
+  { id: '', type: 'quiz', color: '#000000', text: '2' },
+  { id: '', type: 'quiz', color: '#C8A44B', text: '3' },
+  { id: '', type: 'quiz', color: '#000000', text: '4' },
+  { id: '', color: '#C8A44B', text: '5', ikon: '' },
+  { id: '', color: '#000000', text: '6' },
+  { id: '', color: '#C8A44B', text: '7' },
+  { id: '', type: 'time', color: '#000000', text: '8', ikon: '' },
+  { id: '', type: 'question', color: '#C8A44B', text: '9' },
+  { id: '', color: '#000000', text: '10' },
+  { id: '', color: '#C8A44B', text: '11' },
+  { id: '', type: 'replay', color: '#000000', text: '12', ikon: '' }
+];
+
   
   var RouletteWheel = function(el, items){
     this.$el = $(el);
