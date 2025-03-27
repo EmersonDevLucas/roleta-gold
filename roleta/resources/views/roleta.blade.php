@@ -37,6 +37,10 @@
   </div>
   <script src="/js/roleta.js"></script>
   <script src="/js/form.js"></script>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 599566397317c03b86bcaac3d1e483976ff9f2f7
 </body>
 
 </html>
