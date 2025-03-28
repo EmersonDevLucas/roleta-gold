@@ -1,30 +1,4 @@
 var data = [
-<<<<<<< HEAD
-  { id: '', type: 'allin', color: '#C8A44B', text: '1', ikon: '' },
-  { id: '', type: 'quiz', color: '#000000', text: '2' },
-  { id: '', type: 'quiz', color: '#C8A44B', text: '3' },
-  { id: '', type: 'quiz', color: '#000000', text: '4' },
-  { id: '', color: '#C8A44B', text: '5', ikon: '' },
-  { id: '', color: '#000000', text: '6' },
-  { id: '', color: '#C8A44B', text: '7' },
-  { id: '', type: 'time', color: '#000000', text: '8', ikon: '' },
-  { id: '', type: 'question', color: '#C8A44B', text: '9' },
-  { id: '', color: '#000000', text: '10' },
-  { id: '', color: '#C8A44B', text: '11' },
-  { id: '', type: 'replay', color: '#000000', text: '12', ikon: '' }
-];
-
-  
-  var RouletteWheel = function(el, items){
-    this.$el = $(el);
-    this.items = items || [];
-    this._bis = false;
-    this._angle = 0;
-    this._index = 0;
-    this.options = {
-      angleOffset: -90
-    }
-=======
   //{ id: '', color: '#3f297e', text: 'ALL IN', ikon: 'invert_colors' },
   { id: '', type: 'allin', color: '#3f297e', text: '1', ikon: '' },
   { id: '', type: 'quiz', color: '#1d61ac', text: '2' },
@@ -48,7 +22,6 @@ var RouletteWheel = function (el, items) {
   this._index = 0;
   this.options = {
     angleOffset: -90
->>>>>>> 599566397317c03b86bcaac3d1e483976ff9f2f7
   }
 }
 
